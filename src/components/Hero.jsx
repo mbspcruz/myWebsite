@@ -5,7 +5,7 @@ import { Canvas, useLoader } from "@react-three/fiber";
 // const duck = useLoader(GLTFLoader, "./assets/duck.glb");
 
 export default function Hero() {
-  const duck = useGLTF("./assets/duck.glb");
+  const duck = useGLTF("./assets/rubberduckyblend.glb");
   console.log(duck);
   // const ducky = useLoader(GLTFLoader, "../assets/duck.glb");
   // console.log(ducky);
