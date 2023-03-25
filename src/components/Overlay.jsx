@@ -3,7 +3,7 @@ import Hero from "./Hero";
 
 export default function Overlay() {
   return (
-    <div className="absolute m-10 md:m-20 md:w-1/2 ">
+    <div className="m-10 md:m-20 md:w-1/2 ">
       <Hero />
       <Skills />
     </div>

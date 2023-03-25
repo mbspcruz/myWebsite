@@ -1,6 +1,15 @@
 import { Canvas } from "@react-three/fiber";
-import { useGLTF, PresentationControls, Sky, Float } from "@react-three/drei";
+import {
+  useGLTF,
+  PresentationControls,
+  Sky,
+  Float,
+  ScrollControls,
+  Scroll,
+} from "@react-three/drei";
 
+import { Hero, Skills, Overlay } from ".";
+// import { Hero } from "./Hero.jsx";
 import { Physics, RigidBody } from "@react-three/rapier";
 import { useFrame } from "@react-three/fiber";
 import { easing } from "maath";
@@ -47,9 +56,16 @@ export default function Duck() {
         >
           <hemisphereLight castShadow color={"white"} groundColor={"orange"} />
           <ambientLight intensity={0.2} />
-          <CameraMotion>
-            <Model />
-          </CameraMotion>
+          <ScrollControls pages={2}>
+            <Scroll>
+              <CameraMotion>
+                <Model />
+              </CameraMotion>
+            </Scroll>
+            <Scroll html>
+              <Overlay />
+            </Scroll>
+          </ScrollControls>
         </Canvas>
       </div>
     </div>
