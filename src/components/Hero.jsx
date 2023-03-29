@@ -1,3 +1,5 @@
+import { cv } from "../assets";
+
 export default function Hero() {
   return (
     <div className="md:pr-40 md:text-left text-center w-1/2 my-56">
@@ -11,13 +13,17 @@ export default function Hero() {
           to life with some front-end magic, mixing creativity with user
           experience.
         </p>
-        <div className="flex justify-center md:justify-start mt-6">
-          <button className="rounded-md p-6 bg-[#EAC84E] text-[#455C5E] font-bold w-1/3 hover:bg-[#F1DC8E]">
+        <div className="flex justify-center md:justify-start mx-auto mt-6">
+          <a
+            href={cv}
+            target="_blank"
+            className="rounded-md p-6 bg-[#EAC84E] text-[#455C5E] font-bold w-1/3 hover:bg-[#F1DC8E]"
+          >
             Download CV
-          </button>
-          <button className="rounded-md ml-4 p-6 border border-[#EAC84E] text-[#EAC84E] font-bold w-1/3 hover:opacity-50">
+          </a>
+          <a className=" text-center rounded-md ml-4 p-6 border border-[#EAC84E] text-[#EAC84E] font-bold w-1/3 hover:opacity-50">
             Contact
-          </button>
+          </a>
         </div>
       </h1>
     </div>

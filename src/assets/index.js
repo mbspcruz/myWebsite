@@ -10,6 +10,7 @@ import shell from "./shell.svg";
 import tailwind from "./tailwind.svg";
 import threejs from "./threejs.svg";
 import vm from "./vm.svg";
+import cv from "./cv_mda-cruz.pdf";
 
 export {
   blender,
@@ -24,4 +25,5 @@ export {
   tailwind,
   threejs,
   vm,
+  cv,
 };

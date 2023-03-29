@@ -1,9 +1,8 @@
-import { Carousel } from "react-responsive-carousel";
 import { projects } from "../constant";
 
 const ProjectCard = ({ title, paragraph, srclink, hublink }) => (
   <>
-    <div className="md:w-1/3 w-full bg-[#CAD7D8] p-6 rounded-tl-md rounded-bl-md">
+    <div className="md:w-1/3 w-full bg-[#CAD7D8] p-6 rounded-tl-md rounded-bl-md hidden">
       <h3 className="font-bold text-xl mb-10 text-[#455c5e]">{title}</h3>
       <p className="text-justify ">{paragraph}</p>
       <div className="flex mt-4">
@@ -20,7 +19,7 @@ const ProjectCard = ({ title, paragraph, srclink, hublink }) => (
           />
         </svg>
         <a href={srclink} target="_blank" className="font-bold">
-          {title}
+          Website
         </a>
       </div>
       <div className="flex mt-2">
@@ -43,7 +42,7 @@ const ProjectCard = ({ title, paragraph, srclink, hublink }) => (
     </div>
 
     <iframe
-      className="md:w-2/3 w-full bg-black rounded-tr-md rounded-br-md"
+      className="h-full bg-black rounded-tr-md rounded-br-md"
       src={srclink}
     ></iframe>
   </>
@@ -53,7 +52,7 @@ export default function Projects() {
   return (
     <div className="mt-72">
       <h2 className="font-bold text-4xl text-white text-nunito">Projects</h2>
-      <div className="md:flex w-full mt-20 shadow-md">
+      <div className="md:flex justify-between w-full h-96 h-max-full mt-20">
         {projects.map((project, index) => (
           <ProjectCard key={project.id} index={index} {...project} />
         ))}
