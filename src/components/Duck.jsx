@@ -2,10 +2,10 @@ import { Canvas } from "@react-three/fiber";
 import { useGLTF, ScrollControls, Scroll } from "@react-three/drei";
 
 import { Perf } from "r3f-perf";
-import { Overlay, Spheres } from ".";
+import { Overlay, Spheres, Cubes } from ".";
 import { useFrame } from "@react-three/fiber";
 import { easing } from "maath";
-import { useRef } from "react";
+import { Suspense, useRef } from "react";
 
 function CameraMotion({ children }) {
   const group = useRef();
@@ -47,8 +47,9 @@ export default function Duck() {
             zoom: 3,
           }}
         >
-          <Perf />
+          {/* <Perf /> */}
           {/* <hemisphereLight castShadow color={"white"} groundColor={"orange"} /> */}
+
           <ambientLight />
           <ScrollControls pages={5}>
             <Scroll>

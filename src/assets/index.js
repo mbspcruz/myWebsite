@@ -11,6 +11,7 @@ import tailwind from "./tailwind.svg";
 import threejs from "./threejs.svg";
 import vm from "./vm.svg";
 import cv from "./cv_mda-cruz.pdf";
+import duck from "./duck.mp4";
 
 export {
   blender,
@@ -26,4 +27,5 @@ export {
   threejs,
   vm,
   cv,
+  duck,
 };
