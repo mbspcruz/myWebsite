@@ -1,16 +1,8 @@
 import { Canvas } from "@react-three/fiber";
-import {
-  useGLTF,
-  PresentationControls,
-  Sky,
-  Float,
-  ScrollControls,
-  Scroll,
-} from "@react-three/drei";
+import { useGLTF, ScrollControls, Scroll } from "@react-three/drei";
 
-import { Hero, Skills, Overlay } from ".";
-// import { Hero } from "./Hero.jsx";
-import { Physics, RigidBody } from "@react-three/rapier";
+import { Perf } from "r3f-perf";
+import { Overlay, Spheres } from ".";
 import { useFrame } from "@react-three/fiber";
 import { easing } from "maath";
 import { useRef } from "react";
@@ -28,13 +20,13 @@ function CameraMotion({ children }) {
   return <group ref={group}>{children}</group>;
 }
 function Model(props) {
-  const ducky = useGLTF("./assets/rubberduckyblend.glb");
+  const ducky = useGLTF("./assets/rubber.glb");
   return (
     <group {...props} dispose={null}>
       <primitive
         object={ducky.scene}
         scale={0.15}
-        position={[-3, 2, 0]}
+        position={[-3, 1, 0]}
         castShadow
       ></primitive>
     </group>
@@ -43,9 +35,10 @@ function Model(props) {
 
 export default function Duck() {
   return (
-    <div className="hidden md:block">
+    <div className="hidden md:block ">
       <div className="md:fixed h-full w-full">
         <Canvas
+          dpr={[1, 2]}
           camera={{
             fov: 75,
             near: 0.2,
@@ -54,13 +47,15 @@ export default function Duck() {
             zoom: 3,
           }}
         >
-          <hemisphereLight castShadow color={"white"} groundColor={"orange"} />
-          <ambientLight intensity={0.2} />
-          <ScrollControls pages={2}>
+          <Perf />
+          {/* <hemisphereLight castShadow color={"white"} groundColor={"orange"} /> */}
+          <ambientLight />
+          <ScrollControls pages={5}>
             <Scroll>
               <CameraMotion>
                 <Model />
               </CameraMotion>
+              <Spheres />
             </Scroll>
             <Scroll html>
               <Overlay />
