@@ -2,11 +2,9 @@ import { Overlay, Experience, CanvasLoader } from "./components";
 import { isMobile } from "react-device-detect";
 import { useState, useEffect, Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
-import { Html } from "@react-three/drei";
 
 function App() {
   const [stateMobile, setState] = useState(isMobile);
-  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const handleResize = () => {
@@ -16,12 +14,16 @@ function App() {
         setState(true);
       }
     };
+    // add event listener to window
     window.addEventListener("resize", handleResize);
+    // call handleResize on mount
+    handleResize();
+    // clean up event listener on unmount
     return () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-  console.log(loading);
+
   return (
     <>
       {stateMobile ? (

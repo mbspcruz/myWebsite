@@ -12,6 +12,8 @@ import threejs from "./threejs.svg";
 import vm from "./vm.svg";
 import cv from "./cv_mda-cruz.pdf";
 import duck from "./duck.mp4";
+import messagemail from "./messagemail.mp4";
+import billing from "./billing.mp4";
 
 export {
   blender,
@@ -28,4 +30,6 @@ export {
   vm,
   cv,
   duck,
+  messagemail,
+  billing,
 };
