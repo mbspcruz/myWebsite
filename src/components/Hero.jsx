@@ -21,7 +21,11 @@ export default function Hero() {
           >
             Download CV
           </a>
-          <a className="w-1/2 text-center rounded-md ml-4 p-6 border border-[#EAC84E] text-[#EAC84E] font-bold  hover:opacity-50">
+          <a
+            href=""
+            target="_blank"
+            className="w-1/2 text-center rounded-md ml-4 p-6 border border-[#EAC84E] text-[#EAC84E] font-bold  hover:opacity-50"
+          >
             Contact
           </a>
         </div>

@@ -1,7 +1,7 @@
 import { CanvasComponents, Overlay } from ".";
 import { ScrollControls, Scroll } from "@react-three/drei";
 
-export default function Expereience() {
+export default function Experience() {
   return (
     <>
       <ambientLight />

@@ -1,11 +1,12 @@
-import { Overlay, Experience } from "./components";
-
+import { Overlay, Experience, CanvasLoader } from "./components";
 import { isMobile } from "react-device-detect";
 import { useState, useEffect, Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
+import { Html } from "@react-three/drei";
 
 function App() {
   const [stateMobile, setState] = useState(isMobile);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const handleResize = () => {
@@ -20,7 +21,7 @@ function App() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-
+  console.log(loading);
   return (
     <>
       {stateMobile ? (
@@ -38,7 +39,7 @@ function App() {
                 zoom: 3,
               }}
             >
-              <Suspense>
+              <Suspense fallback={<CanvasLoader />}>
                 <Experience />
               </Suspense>
             </Canvas>

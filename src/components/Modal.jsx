@@ -12,9 +12,9 @@ const ProjectCard = ({
 }) => (
   <>
     {activeProject === index && (
-      <div className="md:w-2/3 w-full bg-[#CAD7D8] p-6 rounded-tl-md rounded-bl-md">
+      <div className="md:w-1/3 w-full bg-[#CAD7D8] p-6 rounded-tl-md rounded-bl-md">
         <h3 className="font-bold text-xl mb-10 text-[#455c5e]">{title}</h3>
-        <p className="text-justify text-xs ">{paragraph}</p>
+        <p className=" text-xs ">{paragraph}</p>
         <div className="flex items-center mt-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -54,7 +54,7 @@ const ProjectCard = ({
 
     {activeProject === index && (
       <iframe
-        className="h-max-full w-1/2 bg-black rounded-tr-md rounded-br-md"
+        className="h-max-full w-2/3 bg-black rounded-tr-md rounded-br-md"
         src={srclink}
       ></iframe>
     )}
@@ -79,7 +79,7 @@ export default function Modal({ isOpen, closeModal, activeProject }) {
             &#8203;
           </span>
 
-          <div className="inline-block w-full max-w-2xl p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl rounded-2xl">
+          <div className="inline-block w-full max-w-2xl p-6 my-8 text-left align-middle transition-all transform bg-white shadow-xl rounded-2xl">
             <div className="md:flex w-full h-max-full">
               {projects.map((project, index) => (
                 <ProjectCard

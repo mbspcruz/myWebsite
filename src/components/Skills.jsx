@@ -6,10 +6,7 @@ const SkillCard = ({ id, name, language, icon }) => (
       <h3 className="font-bold text-lg mb-4 text-[#455c5e]">{name}</h3>
       <ul>
         {language.map((skill, index) => (
-          <li
-            key={index}
-            className="text-sm text-primary-75 flex items-center mb-2"
-          >
+          <li key={index} className="text-sm flex items-center mb-2">
             {icon[index] && (
               <img src={icon[index]} alt={skill} className="mr-2 h-8 w-8 " />
             )}

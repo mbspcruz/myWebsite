@@ -12,7 +12,7 @@ export default function Spheres() {
       const scale = 0.2 + Math.random() * 0.8;
       matrix.compose(
         new THREE.Vector3(
-          (Math.random() - 0.5) * 40,
+          (Math.random() - 0.5) * 20,
           Math.random() * 10 - 40,
           Math.random() - 0.5 * 8
         ),
