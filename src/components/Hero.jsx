@@ -2,7 +2,7 @@ import { cv } from "../assets";
 
 export default function Hero() {
   return (
-    <div className="md:pr-40 md:text-left text-center w-1/2 my-50">
+    <div className="md:pr-40 md:text-left text-center w-1/2 my-44">
       <h1 className="text-white ">
         Hello, I'm <br />
         <span className="font-bold text-5xl">Mariana Cruz</span> <br />

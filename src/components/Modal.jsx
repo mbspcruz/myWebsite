@@ -12,7 +12,7 @@ const ProjectCard = ({
 }) => (
   <>
     {activeProject === index && (
-      <div className="md:w-1/3 w-full bg-[#CAD7D8] p-6 rounded-tl-md rounded-bl-md">
+      <div className="md:w-1/3 w-full bg-[#CAD7D8] p-6 rounded-tl-md rounded-bl-md bg-white">
         <h3 className="font-bold text-xl mb-10 text-[#455c5e]">{title}</h3>
         <p className=" text-xs ">{paragraph}</p>
         <div className="flex items-center mt-4">
@@ -70,7 +70,7 @@ export default function Modal({ isOpen, closeModal, activeProject }) {
         onClose={closeModal}
       >
         <div className="min-h-screen px-4 text-center">
-          <Dialog.Overlay className="fixed inset-0 bg-black opacity-30" />
+          <Dialog.Overlay className="fixed inset-0 bg-black opacity-40" />
 
           <span
             className="inline-block h-screen align-middle"
@@ -79,7 +79,7 @@ export default function Modal({ isOpen, closeModal, activeProject }) {
             &#8203;
           </span>
 
-          <div className="inline-block w-full max-w-2xl p-6 my-8 text-left align-middle transition-all transform bg-white shadow-xl rounded-2xl">
+          <div className="inline-block w-full max-w-2xl my-8 text-left align-middle transition-all transform shadow-xl rounded-2xl">
             <div className="md:flex w-full h-max-full">
               {projects.map((project, index) => (
                 <ProjectCard
