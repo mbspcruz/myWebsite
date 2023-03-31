@@ -16,7 +16,7 @@ function CameraMotion({ children }) {
   return <group ref={group}>{children}</group>;
 }
 function Model(props) {
-  const ducky = useGLTF("./assets/rubberduckyblend.glb");
+  const ducky = useGLTF("./assets/duck.glb");
   return (
     <group {...props} dispose={null}>
       <primitive
