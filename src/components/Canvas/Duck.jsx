@@ -8,7 +8,7 @@ function CameraMotion({ children }) {
   useFrame((state, delta) => {
     easing.dampE(
       group.current.rotation,
-      [state.pointer.y / 10, state.pointer.x / 15, 0],
+      [state.pointer.y / 30, state.pointer.x / 30, 0],
       0.25,
       delta
     );
@@ -22,7 +22,8 @@ function Model(props) {
       <primitive
         object={ducky.scene}
         scale={0.15}
-        position={[-3, 1, 0]}
+        position={[2, -0.2, -8]}
+        rotation={[0.6, Math.PI * 0.8, 0]}
         castShadow
       ></primitive>
     </group>

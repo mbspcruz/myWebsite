@@ -8,6 +8,7 @@ import Modal from "./Modal.jsx";
 import CanvasLoader from "./Canvas/CanvasLoader";
 import Experience from "./Experience.jsx";
 import CanvasComponents from "./Canvas/CanvasComponents.jsx";
+import ScreenShow from "./Canvas/ScreenShow.jsx";
 
 export {
   Hero,
@@ -20,4 +21,5 @@ export {
   CanvasLoader,
   Experience,
   CanvasComponents,
+  ScreenShow,
 };

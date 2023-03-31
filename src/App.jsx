@@ -37,7 +37,6 @@ function App() {
                 fov: 75,
                 near: 0.2,
                 far: 1000,
-                position: [-8, 9, -10],
                 zoom: 3,
               }}
             >

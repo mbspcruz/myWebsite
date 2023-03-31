@@ -3,12 +3,6 @@ import { useEffect, useState } from "react";
 
 export default function CanvasLoader() {
   const { progress } = useProgress();
-  // const [loading, setLoading] = useState(true);
-  // useEffect(() => {
-  //   if (progress === 100) {
-  //     setTimeout(() => setLoading(false), 10000);
-  //   }
-  // }, [progress]);
   return (
     <>
       <Html

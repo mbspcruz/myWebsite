@@ -1,3 +1,4 @@
+import { OrbitControls } from "@react-three/drei";
 import { useRef } from "react";
 import { useEffect } from "react";
 import * as THREE from "three";
@@ -12,9 +13,9 @@ export default function Spheres() {
       const scale = 0.2 + Math.random() * 0.8;
       matrix.compose(
         new THREE.Vector3(
-          (Math.random() - 0.5) * 20,
-          Math.random() * 10 - 40,
-          Math.random() - 0.5 * 8
+          Math.random() - 0.5 * 30,
+          Math.random() * 2 - 20,
+          Math.random() - 0.5 * 2
         ),
         new THREE.Quaternion(),
         new THREE.Vector3(scale, scale, scale)
@@ -23,7 +24,8 @@ export default function Spheres() {
     }
   }, []);
   return (
-    <spotLight position={[-4, 10, 0]} color="white">
+    <spotLight position={[0, 10, 0]} color="white">
+      {/* <OrbitControls /> */}
       <instancedMesh ref={spheres} args={[null, null, sphereCount]}>
         <icosahedronGeometry />
         <meshPhysicalMaterial
