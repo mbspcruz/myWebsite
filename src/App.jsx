@@ -27,7 +27,9 @@ function App() {
   return (
     <>
       {stateMobile ? (
-        <Overlay />
+        <div className="bg-[#455C5E]">
+          <Overlay />
+        </div>
       ) : (
         <div className="hidden md:block ">
           <div className="md:fixed h-full w-full">
