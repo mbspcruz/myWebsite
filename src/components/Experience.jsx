@@ -7,7 +7,6 @@ export default function Experience() {
 
   useEffect(() => {
     function updatePages() {
-      console.log(window.innerWidth);
       if (window.innerWidth >= 768 && window.innerWidth < 1024) {
         setPages(7);
       } else {

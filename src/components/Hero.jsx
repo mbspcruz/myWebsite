@@ -11,7 +11,7 @@ export default function Hero() {
           <span className="font-bold text-xl ">
             Creative Frontend Developer
           </span>
-          <p className="mt-8 md:mt-6 lg:text-md text-sm">
+          <p className="mt-8 md:mt-6 md:text-lg text-sm">
             Passionate about technology and always on the lookout for innovative
             solutions in web-development. My main focus is bringing your designs
             to life with some front-end magic, mixing creativity with user
@@ -26,7 +26,7 @@ export default function Hero() {
               Download CV
             </a>
             <a
-              href=""
+              href="https://calendly.com/mbspcruz/30min"
               target="_blank"
               className="flex items-center justify-center w-1/2 text-center self-stretch rounded-md ml-4  p-4 lg:p-6 border border-[#EAC84E] text-[#EAC84E] font-bold  hover:opacity-50"
             >

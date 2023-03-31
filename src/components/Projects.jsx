@@ -25,7 +25,6 @@ export default function Projects() {
       videoRefs[index].current.play();
     }
   }
-  console.log(videoRefs);
 
   function handleOpenModal(projectIndex) {
     setModalIsOpen(true);
@@ -139,7 +138,7 @@ export default function Projects() {
           Download CV
         </a>
         <a
-          href=""
+          href="https://calendly.com/mbspcruz/30min"
           target="_blank"
           className="text-center rounded-md ml-4 p-6 border border-[#EAC84E] text-[#EAC84E] font-bold  hover:opacity-50 md:w-1/4 w-1/2"
         >
