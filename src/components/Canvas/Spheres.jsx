@@ -13,16 +13,16 @@ export default function Spheres() {
       const scale = 0.2 + Math.random() * 0.8;
       matrix.compose(
         new THREE.Vector3(
-          Math.random() - 0.5 * 30,
-          Math.random() * 2 - 20,
-          Math.random() - 0.5 * 2
+          (Math.random() - 0.5) * 8,
+          Math.random() * 10 - 25,
+          (Math.random() - 0.5) * 20
         ),
         new THREE.Quaternion(),
         new THREE.Vector3(scale, scale, scale)
       );
       spheres.current.setMatrixAt(i, matrix);
     }
-  }, []);
+  });
   return (
     <spotLight position={[0, 10, 0]} color="white">
       {/* <OrbitControls /> */}

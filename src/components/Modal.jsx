@@ -12,7 +12,7 @@ const ProjectCard = ({
 }) => (
   <>
     {activeProject === index && (
-      <div className="md:w-1/3 w-full bg-[#CAD7D8] p-6 rounded-tl-md rounded-bl-md bg-white">
+      <div className="md:w-1/3 w-full bg-[#CAD7D8] p-6 rounded-tl-md rounded-bl-md">
         <h3 className="font-bold text-xl mb-10 text-[#455c5e]">{title}</h3>
         <p className=" text-xs ">{paragraph}</p>
         <div className="flex items-center mt-4">

@@ -2,7 +2,7 @@ import { skills } from "../constant";
 
 const SkillCard = ({ id, name, language, icon }) => (
   <div className="h-full flex flex-col justify-center items-center">
-    <div className="bg-[#CAD7D8] rounded-md p-6 md:w-full w-2/3 shadow-lg font-nunito h-full">
+    <div className="bg-[#CAD7D8] rounded-md p-6 w-full w-2/3 shadow-lg font-nunito h-full">
       <h3 className="font-bold text-lg mb-4 text-[#455c5e]">{name}</h3>
       <ul>
         {language.map((skill, index) => (

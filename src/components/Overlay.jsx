@@ -1,6 +1,4 @@
-import Skills from "./Skills";
-import Hero from "./Hero";
-import Projects from "./Projects";
+import { Skills, Hero, Projects, ContactForm } from ".";
 
 export default function Overlay() {
   return (
@@ -8,6 +6,7 @@ export default function Overlay() {
       <Hero />
       <Skills />
       <Projects />
+      <ContactForm />
     </div>
   );
 }

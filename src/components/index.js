@@ -9,6 +9,7 @@ import CanvasLoader from "./Canvas/CanvasLoader";
 import Experience from "./Experience.jsx";
 import CanvasComponents from "./Canvas/CanvasComponents.jsx";
 import ScreenShow from "./Canvas/ScreenShow.jsx";
+import ContactForm from "./ContactForm.jsx";
 
 export {
   Hero,
@@ -22,4 +23,5 @@ export {
   Experience,
   CanvasComponents,
   ScreenShow,
+  ContactForm,
 };

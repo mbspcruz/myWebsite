@@ -48,12 +48,14 @@ export default function Projects() {
             onMouseEnter={() => handleMouseEnter(0)}
             onMouseLeave={() => videoRefs[0].current.pause()}
           />
-          <div className="bg-[#CAD7D8] p-6 rounded-b-md font-bold text-lg text-[#455c5e]">
+          <div className="md:text-left bg-[#CAD7D8] p-6 rounded-b-md font-bold text-lg text-[#455c5e] text-center">
             Message Mail
-            <div className="flex mt-4">
-              <img className="h-8 w-8" src={react} alt="" />
-              <img className="h-8 w-8 ml-2" src={tailwind} alt="" />
-              <div className="ml-auto">
+            <div className="md:flex  items-center ">
+              <div className="flex justify-center items-center mt-4">
+                <img className="h-8 w-8" src={react} alt="" />
+                <img className="h-8 w-8 ml-2" src={tailwind} alt="" />
+              </div>
+              <div className="flex justify-center md:ml-auto md:mt-0 mt-4">
                 <button
                   onClick={() => handleOpenModal(0)}
                   className="font-bold text-sm p-2 bg-[#455c5e] text-white  rounded-md hover:bg-transparent hover:outline hover:outline-[#455c5e] hover:text-[#455c5e]"
@@ -72,14 +74,16 @@ export default function Projects() {
             onMouseEnter={() => handleMouseEnter(1)}
             onMouseLeave={() => videoRefs[1].current.pause()}
           />
-          <div className="bg-[#CAD7D8] p-6 rounded-b-md font-bold text-lg text-[#455c5e]">
+          <div className="md:text-left bg-[#CAD7D8] text-center p-6 rounded-b-md font-bold text-lg text-[#455c5e]">
             My Website
-            <div className="flex mt-4">
-              <img className="h-8 w-8" src={react} alt="" />
-              <img className="h-8 w-8 ml-2" src={tailwind} alt="" />
-              <img className="h-8 w-8 ml-2" src={threejs} alt="" />
-              <img className="h-8 w-8 ml-2" src={blender} alt="" />
-              <div className="ml-auto">
+            <div className="md:flex  items-center ">
+              <div className="flex justify-center items-center mt-4">
+                <img className="h-8 w-8" src={react} alt="" />
+                <img className="h-8 w-8 ml-2" src={tailwind} alt="" />
+                <img className="h-8 w-8 ml-2" src={threejs} alt="" />
+                <img className="h-8 w-8 ml-2" src={blender} alt="" />
+              </div>
+              <div className="flex justify-center md:ml-auto md:mt-0 mt-4">
                 <button
                   onClick={() => handleOpenModal(1)}
                   className="font-bold text-sm p-2 bg-[#455c5e] text-white  rounded-md hover:bg-transparent hover:outline hover:outline-[#455c5e] hover:text-[#455c5e]"
@@ -98,15 +102,17 @@ export default function Projects() {
             onMouseEnter={() => handleMouseEnter(2)}
             onMouseLeave={() => videoRefs[2].current.pause()}
           />
-          <div className="bg-[#CAD7D8] p-6 rounded-b-md font-bold text-lg text-[#455c5e]">
+          <div className="bg-[#CAD7D8] p-6 rounded-b-md font-bold text-lg text-[#455c5e] text-center md:text-left">
             Billing Page
-            <div className="flex mt-4">
-              <img className="h-8 w-8" src={javaScript} alt="" />
-              <img className="h-8 w-8 ml-2" src={html} alt="" />
-              <img className="h-8 w-8 ml-2" src={css} alt="" />
-              <img className="h-8 w-8 ml-2" src={tailwind} alt="" />
+            <div className="md:flex  items-center ">
+              <div className="flex justify-center items-center mt-4">
+                <img className="h-8 w-8" src={javaScript} alt="" />
+                <img className="h-8 w-8 ml-2" src={html} alt="" />
+                <img className="h-8 w-8 ml-2" src={css} alt="" />
+                <img className="h-8 w-8 ml-2" src={tailwind} alt="" />
+              </div>
 
-              <div className="ml-auto">
+              <div className="flex justify-center md:ml-auto md:mt-0 mt-4">
                 <button
                   onClick={() => handleOpenModal(2)}
                   className="font-bold text-sm p-2 bg-[#455c5e] text-white  rounded-md hover:bg-transparent hover:outline hover:outline-[#455c5e] hover:text-[#455c5e]"
