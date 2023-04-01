@@ -58,7 +58,7 @@ const projects = [
     hublink: "https://github.com/mbspcruz/myWebsite",
   },
   {
-    id: "mdacruz",
+    id: "billing",
     title: "Billing Page",
     paragraph:
       "A billing page. This page was made entirely with HTML, Tailwind, CSS and vanilla JavaScript. It's interactive and the JavaScript was mainly used for the menu components, the opening and closing of the hamburger menu as well as the focus mode when loading. This design came from the website 'icodethis.com' a platform where devs can hone their coding skills with daily challenges.",

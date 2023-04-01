@@ -1,11 +1,11 @@
-import { Duck, Spheres, ScreenShow } from "..";
+import { Duck, Spheres } from "..";
 
 export default function CanvasComponents() {
   return (
     <>
       <Duck />
       <Spheres />
-      <ScreenShow />
+      {/* <ScreenShow /> */}
     </>
   );
 }

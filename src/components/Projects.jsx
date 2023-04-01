@@ -44,6 +44,7 @@ export default function Projects() {
             ref={videoRefs[0]}
             className="w-full rounded-t-md"
             src={messagemail}
+            muted="muted"
             onMouseEnter={() => handleMouseEnter(0)}
             onMouseLeave={() => videoRefs[0].current.pause()}
           />
@@ -70,6 +71,7 @@ export default function Projects() {
             ref={videoRefs[1]}
             className="w-full rounded-t-md"
             src={duck}
+            muted="muted"
             onMouseEnter={() => handleMouseEnter(1)}
             onMouseLeave={() => videoRefs[1].current.pause()}
           />
@@ -97,6 +99,7 @@ export default function Projects() {
           <video
             ref={videoRefs[2]}
             className="w-full rounded-t-md"
+            muted="muted"
             src={billing}
             onMouseEnter={() => handleMouseEnter(2)}
             onMouseLeave={() => videoRefs[2].current.pause()}
@@ -129,18 +132,18 @@ export default function Projects() {
           activeProject={activeProject}
         />
       </div>
-      <div className="flex justify-center items-center mx-auto mt-20 md:mt-40">
+      <div className="flex justify-center items-center mx-auto my-20 md:mt-40">
         <a
           href={cv}
           target="_blank"
-          className="rounded-md text-center p-6 bg-[#EAC84E] text-[#455C5E] font-bold hover:bg-[#F1DC8E] md:w-1/4 w-1/2"
+          className="rounded-md mb-20 text-center p-6 bg-[#EAC84E] text-[#455C5E] font-bold hover:bg-[#F1DC8E] md:w-1/4 w-1/2"
         >
           Download CV
         </a>
         <a
           href="https://calendly.com/mbspcruz/30min"
           target="_blank"
-          className="text-center rounded-md ml-4 p-6 border border-[#EAC84E] text-[#EAC84E] font-bold  hover:opacity-50 md:w-1/4 w-1/2"
+          className="text-center mb-20 rounded-md ml-4 p-6 border border-[#EAC84E] text-[#EAC84E] font-bold  hover:opacity-50 md:w-1/4 w-1/2"
         >
           Contact
         </a>
