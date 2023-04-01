@@ -31,7 +31,7 @@ function App() {
           <Overlay />
         </div>
       ) : (
-        <div className="hidden md:block ">
+        <div className="hidden md:block bg-url('./assets/bg.svg') bg-repeat-x">
           <div className="md:absolute h-full w-full">
             <Canvas
               dpr={[1, 2]}
