@@ -12,7 +12,7 @@ export default function Spheres() {
       matrix.compose(
         new THREE.Vector3(
           (Math.random() - 0.5) * 8,
-          -25 + Math.random() * 7,
+          -22 + Math.random() * 7,
           (Math.random() - 0.5) * 20
         ),
         new THREE.Quaternion(),
