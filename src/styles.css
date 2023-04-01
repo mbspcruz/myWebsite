@@ -30,6 +30,6 @@ body,
   height: 100%;
   overflow: hidden;
   background: #455c5e;
-  overflow-x: scroll;
+  overflow-y: scroll;
   touch-action: auto;
 }
