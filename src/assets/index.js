@@ -14,6 +14,9 @@ import cv from "./cv_mda-cruz.pdf";
 import duck from "./duck.mp4";
 import messagemail from "./messagemail.mp4";
 import billing from "./billing.mp4";
+import ducky from "./duck.png";
+import messagemaily from "./messagemail.png";
+import billingy from "./billing.png";
 
 export {
   blender,
@@ -32,4 +35,7 @@ export {
   duck,
   messagemail,
   billing,
+  ducky,
+  messagemaily,
+  billingy,
 };

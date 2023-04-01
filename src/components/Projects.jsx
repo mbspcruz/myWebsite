@@ -12,6 +12,9 @@ import {
   messagemail,
   billing,
   html,
+  billingy,
+  ducky,
+  messagemaily,
 } from "../assets";
 
 export default function Projects() {
@@ -48,10 +51,7 @@ export default function Projects() {
             onMouseEnter={() => handleMouseEnter(0)}
             onMouseLeave={() => videoRefs[0].current.pause()}
           />
-          <img
-            className="md:hidden  w-full rounded-t-md"
-            src="./src/assets/messagemail.png"
-          />
+          <img className="md:hidden  w-full rounded-t-md" src={messagemaily} />
           <div className="md:text-left bg-[#CAD7D8] p-6 rounded-b-md font-bold text-lg text-[#455c5e] text-center">
             Message Mail
             <div className="md:flex  items-center ">
@@ -71,10 +71,7 @@ export default function Projects() {
           </div>
         </div>
         <div>
-          <img
-            className="md:hidden  w-full rounded-t-md"
-            src="./src/assets/duck.png"
-          />
+          <img className="md:hidden  w-full rounded-t-md" src={ducky} />
           <video
             ref={videoRefs[1]}
             className="hidden md:block w-full rounded-t-md"
@@ -112,10 +109,7 @@ export default function Projects() {
             onMouseEnter={() => handleMouseEnter(2)}
             onMouseLeave={() => videoRefs[2].current.pause()}
           />
-          <img
-            className="md:hidden  w-full rounded-t-md"
-            src="./src/assets/billing.png"
-          />
+          <img className="md:hidden  w-full rounded-t-md" src={billingy} />
           <div className="bg-[#CAD7D8] p-6 rounded-b-md font-bold text-lg text-[#455c5e] text-center md:text-left">
             Billing Page
             <div className="md:flex  items-center ">
