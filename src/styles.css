@@ -28,6 +28,7 @@ body,
   left: 0;
   width: 100%;
   height: 100%;
+  overflow: hidden;
   background: #455c5e;
   overflow-x: scroll;
   touch-action: auto;
