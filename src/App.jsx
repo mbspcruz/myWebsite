@@ -32,7 +32,7 @@ function App() {
         </div>
       ) : (
         <div className="hidden md:block ">
-          <div className="md:fixed h-full w-full">
+          <div className="md:absolute h-full w-full">
             <Canvas
               dpr={[1, 2]}
               camera={{
