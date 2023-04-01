@@ -42,11 +42,15 @@ export default function Projects() {
         <div>
           <video
             ref={videoRefs[0]}
-            className="w-full rounded-t-md"
+            className=" hidden md:block w-full rounded-t-md "
             src={messagemail}
             muted="muted"
             onMouseEnter={() => handleMouseEnter(0)}
             onMouseLeave={() => videoRefs[0].current.pause()}
+          />
+          <img
+            className="md:hidden  w-full rounded-t-md"
+            src="./src/assets/messagemail.png"
           />
           <div className="md:text-left bg-[#CAD7D8] p-6 rounded-b-md font-bold text-lg text-[#455c5e] text-center">
             Message Mail
@@ -67,9 +71,13 @@ export default function Projects() {
           </div>
         </div>
         <div>
+          <img
+            className="md:hidden  w-full rounded-t-md"
+            src="./src/assets/duck.png"
+          />
           <video
             ref={videoRefs[1]}
-            className="w-full rounded-t-md"
+            className="hidden md:block w-full rounded-t-md"
             src={duck}
             muted="muted"
             onMouseEnter={() => handleMouseEnter(1)}
@@ -98,11 +106,15 @@ export default function Projects() {
         <div>
           <video
             ref={videoRefs[2]}
-            className="w-full rounded-t-md"
+            className="hidden md:block w-full rounded-t-md"
             muted="muted"
             src={billing}
             onMouseEnter={() => handleMouseEnter(2)}
             onMouseLeave={() => videoRefs[2].current.pause()}
+          />
+          <img
+            className="md:hidden  w-full rounded-t-md"
+            src="./src/assets/billing.png"
           />
           <div className="bg-[#CAD7D8] p-6 rounded-b-md font-bold text-lg text-[#455c5e] text-center md:text-left">
             Billing Page
