@@ -1,6 +1,4 @@
-import { OrbitControls } from "@react-three/drei";
-import { useRef } from "react";
-import { useEffect } from "react";
+import { useRef, useEffect } from "react";
 import * as THREE from "three";
 
 export default function Spheres() {
@@ -14,7 +12,7 @@ export default function Spheres() {
       matrix.compose(
         new THREE.Vector3(
           (Math.random() - 0.5) * 8,
-          -22 + Math.random() * 7,
+          -25 + Math.random() * 7,
           (Math.random() - 0.5) * 20
         ),
         new THREE.Quaternion(),

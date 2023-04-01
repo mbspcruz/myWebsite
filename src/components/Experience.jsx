@@ -1,7 +1,7 @@
 import { CanvasComponents, Overlay } from ".";
 import { ScrollControls, Scroll } from "@react-three/drei";
 import { useState, useEffect } from "react";
-import { Perf } from "r3f-perf";
+// import { Perf } from "r3f-perf";
 
 export default function Experience() {
   const [pages, setPages] = useState(4);
@@ -20,7 +20,7 @@ export default function Experience() {
   }, []);
   return (
     <>
-      <Perf />
+      {/* <Perf /> */}
       <ambientLight />
       <ScrollControls pages={pages}>
         <Scroll>

@@ -30,7 +30,6 @@ body,
   height: 100%;
   /* overflow: hidden; */
   background: url("./assets/bg.svg");
-  background-repeat: no-repeat;
   touch-action: none;
 }
 

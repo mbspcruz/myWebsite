@@ -22,20 +22,16 @@ export default function ScreenShow() {
     console.log(cube.current);
   };
 
-  const collisionEnter = () => {
-    console.log("collision!");
-  };
-
   return (
     <>
       <Physics>
         <RigidBody type="fixed">
-          <mesh position={[4, -30, -15]} rotation={[0, -0.5, 0]}>
+          <mesh position={[4, -31, -15]} rotation={[0, -0.5, 0]}>
             <planeGeometry args={[8, 5]} />
             <meshBasicMaterial map={texture} side={THREE.DoubleSide} />
           </mesh>
           <mesh
-            position={[2.7, -32.5, -12.7]}
+            position={[2.7, -33.5, -12.7]}
             rotation={[-Math.PI * 0.5, 0, -0.5]}
           >
             <planeGeometry args={[8, 5]} />
@@ -46,18 +42,7 @@ export default function ScreenShow() {
             />
           </mesh>
           <mesh
-            position={[0.7, -32.5, -9]}
-            rotation={[-Math.PI * 0.5, 0, -0.5]}
-          >
-            <planeGeometry args={[8, 5]} />
-            <meshPhysicalMaterial
-              roughness={0.7}
-              thickness={0.5}
-              transmission={1}
-            />
-          </mesh>
-          <mesh
-            position={[-1.5, -32.5, -5]}
+            position={[0.7, -33.5, -9]}
             rotation={[-Math.PI * 0.5, 0, -0.5]}
           >
             <planeGeometry args={[8, 5]} />
@@ -73,8 +58,7 @@ export default function ScreenShow() {
           type="dynamic"
           restitution={1}
           ref={cube}
-          position={[-1.75, -30, -5]}
-          onCollisionEnter={collisionEnter}
+          position={[-1.75, -30, 0]}
         >
           {/* <OrbitControls /> */}
           <mesh onClick={cubeJump}>
