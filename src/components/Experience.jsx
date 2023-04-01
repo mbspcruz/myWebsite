@@ -11,7 +11,7 @@ export default function Experience() {
       if (window.innerWidth >= 768 && window.innerWidth < 1024) {
         setPages(7);
       } else {
-        setPages(4);
+        setPages(5);
       }
     }
     updatePages();
