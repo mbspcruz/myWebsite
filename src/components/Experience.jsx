@@ -14,7 +14,6 @@ export default function Experience() {
         if (buttonPosition) {
           setPages(Math.ceil(buttonPosition / window.innerHeight));
         }
-        console.log(buttonRef.current?.getBoundingClientRect());
       }, 100);
     }
     updatePages();

@@ -15,18 +15,16 @@ function CameraMotion({ children }) {
   });
   return <group ref={group}>{children}</group>;
 }
-function Model(props) {
+function Model() {
   const ducky = useGLTF("./assets/duck.glb");
   return (
-    <group {...props} dispose={null}>
-      <primitive
-        object={ducky.scene}
-        scale={0.15}
-        position={[2, -0.2, -8]}
-        rotation={[0.6, Math.PI * 0.8, 0]}
-        castShadow
-      ></primitive>
-    </group>
+    <primitive
+      object={ducky.scene}
+      scale={0.15}
+      position={[2, -0.2, -8]}
+      rotation={[0.6, Math.PI * 0.8, 0]}
+      castShadow
+    ></primitive>
   );
 }
 
