@@ -14,6 +14,8 @@ export default function Experience() {
         if (buttonPosition) {
           setPages(Math.ceil(buttonPosition / window.innerHeight));
         }
+        console.log(buttonPosition);
+        console.log(window.innerHeight);
       }, 100);
     }
     updatePages();
@@ -26,6 +28,8 @@ export default function Experience() {
       document.removeEventListener("DOMContentLoaded", updatePages);
     };
   }, []);
+
+  console.log(pages);
   return (
     <>
       <ScrollControls pages={pages}>
@@ -36,7 +40,7 @@ export default function Experience() {
           <Overlay />
           <div
             ref={buttonRef}
-            className="flex justify-center items-center mx-auto my-20 md:mt-40"
+            className="flex justify-center items-center mx-auto my-20  "
           >
             <a
               href={cv}

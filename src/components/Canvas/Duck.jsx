@@ -12,7 +12,7 @@ function CameraMotion({ children }) {
       0.25,
       delta
     );
-  });
+  }, []);
   return <group ref={group}>{children}</group>;
 }
 function Model() {

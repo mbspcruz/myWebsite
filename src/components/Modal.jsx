@@ -12,7 +12,7 @@ const ProjectCard = ({
 }) => (
   <>
     {activeProject === index && (
-      <div className="md:w-1/3 w-full bg-[#CAD7D8] p-6 rounded-md md:rounded-tl-md md:rounded-bl-md">
+      <div className="md:w-1/3 w-full bg-[#CAD7D8] p-6 rounded-l-md md:rounded-tl-md md:rounded-bl-md">
         <h3 className="font-bold text-xl mb-10 text-[#455c5e]">{title}</h3>
         <p className=" text-xs ">{paragraph}</p>
         <div className="flex items-center mt-4">
@@ -54,7 +54,7 @@ const ProjectCard = ({
 
     {activeProject === index && (
       <iframe
-        className="h-max-full hidden md:block w-2/3 bg-black rounded-tr-md rounded-br-md"
+        className="h-max-full hidden md:block w-2/3 bg-black rounded-r-md rounded-br-md"
         src={srclink}
       ></iframe>
     )}

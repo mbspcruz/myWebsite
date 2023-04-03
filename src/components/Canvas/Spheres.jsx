@@ -20,7 +20,7 @@ export default function Spheres() {
       );
       spheres.current.setMatrixAt(i, matrix);
     }
-  });
+  }, []);
   return (
     <spotLight position={[0, 10, 0]} color="white">
       <instancedMesh ref={spheres} args={[null, null, sphereCount]}>

@@ -45,7 +45,7 @@ export default function Projects() {
         <div>
           <video
             ref={videoRefs[0]}
-            className=" hidden md:block w-full rounded-t-md "
+            className=" hidden md:block w-full rounded-t-md"
             src={messagemail}
             muted="muted"
             onMouseEnter={() => handleMouseEnter(0)}

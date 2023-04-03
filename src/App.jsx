@@ -8,7 +8,7 @@ function App() {
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth > 768) {
+      if (window.innerWidth >= 768) {
         setState(false);
       } else {
         setState(true);
