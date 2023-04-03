@@ -1,6 +1,7 @@
 import { Overlay, Experience, CanvasLoader } from "./components";
 import { useState, useEffect, Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
+import { cv } from "./assets";
 
 function App() {
   const [stateMobile, setState] = useState(false);
@@ -28,9 +29,25 @@ function App() {
       {stateMobile ? (
         <div>
           <Overlay />
+          <div className="my-20 m-10 flex flex-col md:flex-row md:justify-center md:items-center space-y-4 md:space-y-0 md:space-x-4">
+            <a
+              href={cv}
+              target="_blank"
+              className="rounded-md text-center p-4 bg-[#EAC84E] text-[#455C5E] font-bold hover:bg-[#F1DC8E]"
+            >
+              Download CV
+            </a>
+            <a
+              href="https://calendly.com/mbspcruz/30min"
+              target="_blank"
+              className="text-center rounded-md p-4 border border-[#EAC84E] text-[#EAC84E] font-bold  hover:opacity-50"
+            >
+              Contact
+            </a>
+          </div>
         </div>
       ) : (
-        <div className="hidden md:block bg-url('./assets/bg.svg') bg-repeat-x">
+        <div className="hidden md:block">
           <div className="md:absolute h-full w-full">
             <Canvas
               style={{ width: "100%", height: "100%" }}

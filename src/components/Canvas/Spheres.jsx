@@ -13,7 +13,7 @@ export default function Spheres() {
         new THREE.Vector3(
           (Math.random() - 0.5) * 8,
           -22 + Math.random() * 7,
-          (Math.random() - 0.5) * 20
+          (Math.random() - 0.5) * 35
         ),
         new THREE.Quaternion(),
         new THREE.Vector3(scale, scale, scale)
@@ -23,9 +23,8 @@ export default function Spheres() {
   });
   return (
     <spotLight position={[0, 10, 0]} color="white">
-      {/* <OrbitControls /> */}
       <instancedMesh ref={spheres} args={[null, null, sphereCount]}>
-        <icosahedronGeometry />
+        <sphereGeometry />
         <meshPhysicalMaterial
           roughness={0.7}
           thickness={0.5}

@@ -16,7 +16,7 @@ body,
   left: 0;
   width: 100%;
   height: 100vh;
-  background: #455c5e;
+  background: url("./assets/bg.svg");
   overflow: hidden;
   overflow-y: initial !important;
   touch-action: auto;

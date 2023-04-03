@@ -5,7 +5,6 @@ export default function Hero() {
     <div className="flex justify-center md:block my-20 lg:my-44  ">
       <div className="md:pr-40 md:text-left lg:w-1/2 md:w-2/3">
         <h1 className="text-white text-left  lg:text-md text-sm ">
-          Hello, I'm <br />
           <span className="text-center font-bold text-5xl">Mariana Cruz</span>
           <br />
           <span className="font-bold text-xl ">
