@@ -1,33 +1,40 @@
 import { CanvasComponents, Overlay } from ".";
 import { ScrollControls, Scroll } from "@react-three/drei";
-import { useState, useEffect } from "react";
-// import { Perf } from "r3f-perf";
+import { useState, useEffect, useRef } from "react";
 
 export default function Experience() {
-  const [pages, setPages] = useState(4);
+  const [pages, setPages] = useState(0);
+  const buttonRef = useRef(null);
 
   useEffect(() => {
     function updatePages() {
-      if (window.innerWidth >= 768 && window.innerWidth < 1024) {
-        setPages(6.5);
-      } else {
-        setPages(3.5);
-      }
+      window.setTimeout(() => {
+        const buttonPosition = buttonRef.current?.getBoundingClientRect().top;
+        if (buttonPosition) {
+          setPages(Math.ceil(buttonPosition / window.innerHeight));
+        }
+        console.log(buttonRef.current?.getBoundingClientRect());
+      }, 100);
     }
     updatePages();
     window.addEventListener("resize", updatePages);
-    return () => window.removeEventListener("resize", updatePages);
+    window.addEventListener("load", updatePages);
+    document.addEventListener("DOMContentLoaded", updatePages);
+    return () => {
+      window.removeEventListener("resize", updatePages);
+      window.removeEventListener("load", updatePages);
+      document.removeEventListener("DOMContentLoaded", updatePages);
+    };
   }, []);
   return (
     <>
-      {/* <Perf /> */}
-      <ambientLight />
       <ScrollControls pages={pages}>
         <Scroll>
           <CanvasComponents />
         </Scroll>
         <Scroll html>
           <Overlay />
+          <button ref={buttonRef}>Click me!</button>
         </Scroll>
       </ScrollControls>
     </>

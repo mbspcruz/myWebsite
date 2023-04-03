@@ -1,14 +1,13 @@
 import { Overlay, Experience, CanvasLoader } from "./components";
-import { isMobile } from "react-device-detect";
 import { useState, useEffect, Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 
 function App() {
-  const [stateMobile, setState] = useState(isMobile);
+  const [stateMobile, setState] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
-      if (!isMobile && window.innerWidth > 768) {
+      if (window.innerWidth > 768) {
         setState(false);
       } else {
         setState(true);
@@ -34,7 +33,9 @@ function App() {
         <div className="hidden md:block bg-url('./assets/bg.svg') bg-repeat-x">
           <div className="md:absolute h-full w-full">
             <Canvas
+              style={{ width: "100%", height: "100%" }}
               dpr={[1, 2]}
+              resize={false}
               camera={{
                 fov: 75,
                 near: 0.2,
