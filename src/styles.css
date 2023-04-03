@@ -17,6 +17,8 @@ body,
   width: 100%;
   height: 100vh;
   background: url("./assets/bg.svg");
+  background-size: auto;
+  background-repeat: repeat-x;
   overflow: hidden;
   overflow-y: initial !important;
   touch-action: auto;
