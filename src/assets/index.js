@@ -14,28 +14,30 @@ import cv from "./cv_mda-cruz.pdf";
 import duck from "./duck.mp4";
 import messagemail from "./messagemail.mp4";
 import billing from "./billing.mp4";
-import ducky from "./duck.png";
-import messagemaily from "./messagemail.png";
-import billingy from "./billing.png";
+import ducky from "./duck.webp";
+import messagemaily from "./mymessage.webp";
+import billingy from "./billing.webp";
+import abigail from "./abigail.webp";
 
 export {
-  blender,
-  c,
-  css,
-  figma,
-  git,
-  html,
-  javaScript,
-  react,
-  shell,
-  tailwind,
-  threejs,
-  vm,
-  cv,
-  duck,
-  messagemail,
-  billing,
-  ducky,
-  messagemaily,
-  billingy,
+	blender,
+	c,
+	css,
+	figma,
+	git,
+	html,
+	javaScript,
+	react,
+	shell,
+	tailwind,
+	threejs,
+	vm,
+	cv,
+	duck,
+	messagemail,
+	billing,
+	ducky,
+	messagemaily,
+	billingy,
+	abigail,
 };
